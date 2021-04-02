@@ -1,7 +1,8 @@
 const http = require("http");
 
 const server = http.createServer((req, res)=>{
-    res.write("Hello World");
+    const arr = [ 1, 2, 3, 4, 5,6, 7, 8];
+    res.write(JSON.stringify(arr));
     res.end();
 
 });
